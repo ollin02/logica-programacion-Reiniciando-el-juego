@@ -43,7 +43,7 @@
    utilizando la altura y la anchura que se proporcionarán como parámetros.
 ```javascript
     function areaPerimetro(base, altura){
-        return console.log(`Rectangulo de base : ${base} y de altura: ${altura} el perimetro es: ${2*base+2*altura} y el area es: ${base*altura}`);
+        console.log(`Rectangulo de base : ${base} y de altura: ${altura} el perimetro es: ${2*base+2*altura} y el area es: ${base*altura}`);
     }
 
     let base = 5;
@@ -51,5 +51,24 @@
     areaPerimetro(base,altura);
 ```
 5. Crea una función que muestre en pantalla el área y el perímetro de una sala circular, utilizando su radio que se proporcionará como parámetro. Considera Pi = 3,14.
-   
-  
+```javascript
+    function circuloAreaPerimetro(radio){
+        const PI = 3.141516;
+        console.log(`El circulo de radio ${radio} tiene de perimetro ${2*PI*radio} y de area ${PI*radio*radio}`); 
+    }
+
+    let radio = 5
+    circuloAreaPerimetro(radio);
+```   
+6.Crea una función que muestre en pantalla la tabla de multiplicar de un número dado como parámetro.
+```javascript
+    function tablaMultiplicar(numero){
+         for(var i=1; i<=10; i++){
+            var resultado = numero*i;
+            console.log(numero + "X" + i + "=" + resultado);
+        }
+    }
+
+    let valor = 2;
+    tablaMultiplicar(valor);
+``` 
